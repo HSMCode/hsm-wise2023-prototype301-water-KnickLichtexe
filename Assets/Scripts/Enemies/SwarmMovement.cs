@@ -10,9 +10,9 @@ public class SwarmMovement : MonoBehaviour
 
     public int RF = 0;
     public int RV = 0;
-    public int ECL = 0;
-    public int ECT = 0;
-    public int EGD = 0;
+    public static int ECL = 0;
+    public static int ECT = 0;
+    public static int EGD = 0;
 
 
     // Start is called before the first frame update
