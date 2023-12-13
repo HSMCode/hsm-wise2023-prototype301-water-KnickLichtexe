@@ -21,7 +21,7 @@ public class Instancer : MonoBehaviour
 
         if (t >= 5)
         {
-            Instantiate(EnemieSwarm, new Vector3(30, 2, 0), Quaternion.identity);
+            Instantiate(EnemieSwarm, new Vector3(30, 2, 1), Quaternion.identity);
             t = 0;
         }
     }
