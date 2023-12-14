@@ -30,5 +30,14 @@ public class CatFish : MonoBehaviour
         {
             transform.position += new Vector3(-1 * (Time.deltaTime * 2), 0, 0);
         }
+        if (SwarmMovement.DestroySwarm && Enemy == true)
+        {
+            Destroy(gameObject);
+        }
+
+        if (SwarmMovement.DestroyPlayer && Enemy == false)
+        {
+            Destroy(gameObject);
+        }
     }
 }

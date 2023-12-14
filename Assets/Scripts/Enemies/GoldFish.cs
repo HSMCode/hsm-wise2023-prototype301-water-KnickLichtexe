@@ -26,9 +26,18 @@ public class GoldFish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Enemy == true)
+      if (Enemy == true)
         {
             transform.position += new Vector3(-1 * (Time.deltaTime * 2), 0, 0);
+        }
+        if (SwarmMovement.DestroySwarm && Enemy == true)
+        {
+            Destroy(gameObject);
+        }
+
+        if (SwarmMovement.DestroyPlayer && Enemy == false)
+        {
+            Destroy(gameObject);
         }
     }
 }
