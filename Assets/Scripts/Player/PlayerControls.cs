@@ -84,13 +84,13 @@ public class PlayerControls : MonoBehaviour
 
             if (SwarmMovement.ECT >= 1)
             {
-                Instantiate(CatFish, new Vector3(Random.Range(29f, 31f), Random.Range(.5f, 1.5f), Random.Range(-1f, 1f)), Quaternion.identity);
+                Instantiate(CatFish, new Vector3(Random.Range(-5f, -3f), Random.Range(1f, 3f), Random.Range(-1f, 1f)), Quaternion.identity);
                 SwarmMovement.ECT -= 1;
             }
 
             if (SwarmMovement.EGD >= 1)
             {
-                Instantiate(GoldFish, new Vector3(Random.Range(29f, 31f), Random.Range(.5f, 1.5f), Random.Range(-1f, 1f)), Quaternion.identity);
+                Instantiate(GoldFish, new Vector3(Random.Range(-5f, -3f), Random.Range(1f, 3f), Random.Range(-1f, 1f)), Quaternion.identity);
                 SwarmMovement.EGD -= 1;
             }
         }
