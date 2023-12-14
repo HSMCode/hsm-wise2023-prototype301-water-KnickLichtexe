@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1913866191473381372}
   - component: {fileID: -8100146196170293789}
+  - component: {fileID: -1784358317615559091}
   m_Layer: 0
   m_Name: PlayerFish
   m_TagString: Untagged
@@ -47,4 +48,33 @@ MonoBehaviour:
   ClownFish: {fileID: 4228301388256496601, guid: a5189fd55bd542247a751db18a14ab37, type: 3}
   CatFish: {fileID: 8168877739061039870, guid: c021414437a478e488be2c18848027c3, type: 3}
   GoldFish: {fileID: 3310767149484167549, guid: dbaa7fabaeb5fdc40a8f24622e389c87, type: 3}
+  Counter: {fileID: 1827955311099663064, guid: 63d1b00df655878489184a408447cbc3, type: 3}
+  counter: 
   FS: 0
+  FG: 0
+  CL: 0
+  CT: 0
+  GD: 0
+  Food: 10
+  s: 0
+--- !u!65 &-1784358317615559091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5685684147698749544}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}

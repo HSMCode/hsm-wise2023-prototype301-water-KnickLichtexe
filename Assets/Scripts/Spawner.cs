@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         Instantiate(PlayerFish, new Vector3(-4, 2, -1), Quaternion.identity);
-        Instantiate(EnemieSpawner, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(EnemieSpawner, new Vector3(0, 2, 0), Quaternion.identity);
     }
 
     // Update is called once per frame

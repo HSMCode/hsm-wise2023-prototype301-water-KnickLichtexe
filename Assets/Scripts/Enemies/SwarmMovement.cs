@@ -35,17 +35,20 @@ public class SwarmMovement : MonoBehaviour
             if (RF == 1)
             {
                 Instantiate(ClownFish, new Vector3(Random.Range(29f, 31f), Random.Range(.5f, 1.5f), Random.Range(-1f, 1f)),  Quaternion.identity);
+                ECL += 1;
                 
             }
 
             if (RF == 2)
             {
                 Instantiate(CatFish, new Vector3(Random.Range(29f, 31f), Random.Range(.5f, 1.5f), Random.Range(-1f, 1f)), Quaternion.identity);
+                ECT += 1;
             }
 
             if (RF == 3)
             {
                 Instantiate(GoldFish, new Vector3(Random.Range(29f, 31f), Random.Range(.5f, 1.5f), Random.Range(-1f, 1f)), Quaternion.identity);
+                EGD += 1;
             }
 
             RF = 0;
