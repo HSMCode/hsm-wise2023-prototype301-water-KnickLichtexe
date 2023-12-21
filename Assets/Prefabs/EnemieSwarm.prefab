@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -7223675883146932582}
   m_Layer: 0
   m_Name: EnemieSwarm
-  m_TagString: Untagged
+  m_TagString: EnemySwarm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
