@@ -8,6 +8,8 @@ TagManager:
   - Cat
   - Gold
   - EnemySwarm
+  - NPC
+  - ScriptEmpty
   layers:
   - Default
   - TransparentFX
