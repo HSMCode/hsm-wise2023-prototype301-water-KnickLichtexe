@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class KeyboardInput : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+
+    private bool decideToFeed = false;
+
+    void Update() {
+        // Check for PlayerInput
+        if (Input.GetButtonDown("Jump")){
+            decideToFeed = true;
+        }
+        else {
+            decideToFeed = false;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public bool Feed() {
+        return decideToFeed;
     }
+
+
 }
+
+
