@@ -8,6 +8,12 @@ TagManager:
   - Cat
   - Gold
   - EnemySwarm
+  - NPC
+  - ScriptEmpty
+  - Spawner
+  - NPCWait
+  - NPCWaitSwarm
+  - Ally
   layers:
   - Default
   - TransparentFX
