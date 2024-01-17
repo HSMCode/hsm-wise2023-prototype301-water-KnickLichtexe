@@ -11,7 +11,7 @@ public class playerFishies : MonoBehaviour
     spawnFishies spawnFish;
     public GameObject spawner;
     public List<GameObject> playerFish;
-    public int score = 0, highscore = 0;
+    public int score = 0, highscore = 0, finalScore = 0;
     public int food = 5;
     public int foodCost;
     public int catfishChance = 15;
@@ -20,6 +20,7 @@ public class playerFishies : MonoBehaviour
     public GameObject catfishedPanel;
     public GameObject gameOverScreen;
     public TextMeshProUGUI gameOverScore;
+    public TextMeshProUGUI gameOverFinalScore;
 
     private float t = 0f;
 
@@ -33,6 +34,7 @@ public class playerFishies : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        finalScore = highscore + spawnFishies.round -1;
         calculateScore();
         if (Input.GetButtonDown("Jump") && !isAlive)
         {
@@ -46,7 +48,8 @@ public class playerFishies : MonoBehaviour
 
         if (!isAlive)
         {
-            gameOverScore.text = "Your swarm reached a power of " + highscore.ToString();
+            gameOverFinalScore.text = "Score: " + finalScore;
+            gameOverScore.text = "Your swarm reached a power of " + highscore.ToString() + " and survived " + (spawnFishies.round - 1) + " rounds.";
             gameOverScreen.SetActive(true);
         }
 
