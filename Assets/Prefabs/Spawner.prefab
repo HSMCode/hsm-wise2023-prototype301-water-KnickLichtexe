@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3103781027611706506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9106369820753012993}
+  - component: {fileID: 774063220132512620}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9106369820753012993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3103781027611706506}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.3, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &774063220132512620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3103781027611706506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4a3eae211b4f1c4085ae5cb9e786ccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fishies:
+  - {fileID: 7413266669953574482, guid: 712f3faa199d5bd478a4dba9c38fabbe, type: 3}
+  - {fileID: 7413266669953574482, guid: 034a8314c6645e44b8777bd8f64c09d4, type: 3}
+  - {fileID: 80342816125653990, guid: 8e290ee4f51f86542b02858c2a2a022b, type: 3}
+  - {fileID: 4734558195677067319, guid: 08e629b8e551f1441b26c393d8f78349, type: 3}
+  - {fileID: 1057513699769094280, guid: 28908f9c397e6b74fb90785fc1529dd3, type: 3}
+  spawnMultiplier: 1
+  spawnRadius: 2
+  percentages: []
+  activeFishies: []
